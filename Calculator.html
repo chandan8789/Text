@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .back
+    {
+        /* background-color: black; */
+        border: 1px solid black;
+        height: 590px;
+        background-color: black;
+        width: 360px;
+        text-align: center;
+        border-radius: 15px;
+        margin-left: 500px;
+        margin-top: 100px;
+    }
+    .container
+    {
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+    }
+    .container>:hover
+    {
+        background-color: rgb(18, 17, 17);
+        color: white;
+        box-shadow: 5px -10px -5px;
+    }
+
+
+</style>
+<body>
+    <div class="back">
+        <div class="display">
+    <input style="height: 60px; width: 300px; margin-top: 40px; background-color: rgb(58, 56, 56); font-size: 50px; color: white" type="text" id="display">
+</div>
+    
+    <div style="margin-top: 50px; font-size:20px;" class="container">
+        <input style="height: 60px; width: 60px; font-size: 25px; border-radius: 8px;" type="button" value="Ac" ondblclick="display.value='' ">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="DEL" 
+        onclick="display.value=display.value.toString().slice(0,-1)">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="." onclick="display.value+='.'">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="/" onclick="display.value+='/'">
+    </div>
+
+    <div style="margin-top: 25px;" class="container">
+        <input style="height: 60px; width: 60px; font-size: 25px; border-radius: 8px;" type="button" value="7" onclick="display.value+='7'">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="8" onclick="display.value+='8'">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="9" onclick="display.value+='9'">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="*" onclick="display.value+='*'">
+    </div>
+
+    <div style="margin-top: 25px;" class="container">
+        <input style="height: 60px; width: 60px; font-size: 25px; border-radius: 8px;" type="button" value="4" onclick="display.value+='4'">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="5" onclick="display.value+='5'">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="6" onclick="display.value+='6'">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="-" onclick="display.value+='-'">
+    </div>
+
+    <div style="margin-top: 25px;" class="container">
+        <input style="height: 60px; width: 60px; font-size: 25px; border-radius: 8px;" type="button" value="1" onclick="display.value+='1'">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="2" onclick="display.value+='2'">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="3" onclick="display.value+='3'">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="+" onclick="display.value+='+'">
+    </div>
+
+    <div style="margin-top: 25px;" class="container">
+        <input style="height: 60px; width: 60px; font-size: 25px; border-radius: 8px;" type="button" value="00" onclick="display.value+='00'">
+        <input style="height: 60px; width: 60px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="0" onclick="display.value+='0'">
+        <input style="height: 60px; width: 145px; margin-left: 20px; font-size: 25px; border-radius: 8px;" type="button" value="=" onclick="display.value=eval(display.value)">
+    </div>
+</div>
+</body>
+</html>
